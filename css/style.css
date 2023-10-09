@@ -1,0 +1,92 @@
+h1,
+h2,
+h3,
+h4 {
+    text-align: center;
+}
+
+.right {
+    text-align: right;
+}
+
+h1:first-of-type {
+    font-size: xx-large;
+}
+
+.left {
+    text-align: left;
+}
+
+.red {
+    color: red;
+}
+
+p:first-letter {
+    font-size: 130%;
+    font-weight: bold;
+}
+
+a {
+    text-decoration: none;
+    color: tomato;
+}
+
+del {
+    text-decoration: line-through;
+    background-color: #fbb;
+    color: #555;
+}
+
+ins {
+    text-decoration: none;
+    background-color: #d4fcbc;
+}
+
+rt {
+    color: green;
+}
+
+ruby {
+    color: red;
+    margin-top: 10%;
+    margin-left: 25%;
+    border-left: 1px green solid;
+    border-right: 1px blue solid;
+    border-radius: 20%;
+}
+
+#me {
+    color: crimson;
+}
+
+pre {
+    width: 700px;
+    margin: 0 auto;
+    padding: 0px;
+}
+
+.code {
+    color: blue;
+}
+
+img:hover {
+    opacity: 50%;
+}
+
+ul {
+    list-style: none;
+    border: dotted 2px red;
+    border-radius: 25px;
+}
+
+ul li:nth-child(2) {
+    color: violet;
+}
+
+ul::before {
+    width: 10px;
+    height: 10px;
+    background-color: yellow;
+    content: "UL: ";
+    color: red;
+}
