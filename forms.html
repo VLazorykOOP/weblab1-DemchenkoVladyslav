@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Form Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        form {
+            margin: 20px;
+            padding: 20px;
+            border: 1px solid #ccc;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        input,
+        textarea,
+        select {
+            margin-bottom: 12px;
+            width: 100%;
+            padding: 8px;
+            box-sizing: border-box;
+        }
+
+        button {
+            padding: 10px 15px;
+            background-color: #4CAF50;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        input[type=checkbox] {
+            width: 50px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <form accept-charset="UTF-8" target="_blank" autocomplete="on" enctype="multipart/form-data">
+        <fieldset>
+            <legend id="form-legend" style="color: blue; text-align: center;">Form Legend</legend>
+
+            <label for="name" title="Enter your full name">Name:</label>
+            <input type="text" id="name" name="name" required maxlength="50" placeholder="John Doe" autofocus>
+
+            <label for="email" title="Enter your email address">Email:</label>
+            <input type="email" id="email" name="email" required maxlength="100"
+                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+
+            <label for="password" title="Enter a strong password">Password:</label>
+            <input type="password" id="password" name="password" required minlength="8" maxlength="20">
+
+            <label for="strength" title="Password Strength">Password Strength:</label>
+            <meter id="strength" class="password-strength" style="width: 100%;" max="10" low="4" value="7"></meter>
+
+            <label for="birthday" title="Select your date of birth">Birthday:</label>
+            <input type="date" id="birthday" name="birthday" required>
+
+            <label for="gender" title="Select your gender">Gender:</label>
+            <select id="gender" name="gender" required>
+                <optgroup label="Select One" title="Choose your gender" disabled lang="en">
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                </optgroup>
+            </select>
+            <label for="browser" title="Select your preferred browser">Preferred Browser:</label>
+            <input list="browsers" name="browser" id="browser" dir="ltr" style="border: 1px solid #ccc;"
+                title="Choose your preferred browser">
+            <datalist id="browsers" style="background-color: #f2f2f2;" title="List of browsers">
+                <option value="Chrome">
+                <option value="Firefox">
+                <option value="Safari">
+                <option value="Edge">
+                <option value="Opera">
+            </datalist>
+            <label for="subscribe" title="Subscribe to newsletter">Subscribe:</label>
+            <input type="checkbox" id="subscribe" name="subscribe" checked>
+            <details dir="ltr" open id="additional-details">
+                <summary>Additional Details</summary>
+                <p>This is additional information that can be toggled.</p>
+            </details>
+            <label for="comments" title="Enter your comments" class="comment-label">Comments:</label>
+            <textarea id="comments" name="comments" placeholder="Write your comments here..." cols="30" rows="5"
+                disabled></textarea>
+
+            <button type="submit" formmethod="post" formenctype="multipart/form-data" formtarget="_blank"
+                formnovalidate>Submit</button><keygen style="color: red;" dir="rtl" keytype="rsa"
+                challenge="random_challenge" lang="en"></keygen>
+
+
+        </fieldset>
+    </form>
+</body>
+
+</html>
