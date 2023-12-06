@@ -72,7 +72,7 @@
 
             <label for="gender" title="Select your gender">Gender:</label>
             <select id="gender" name="gender" required>
-                <optgroup label="Select One" title="Choose your gender" disabled lang="en">
+                <optgroup label="Select One" title="Choose your gender" lang="en">
                     <option value="male">Male</option>
                     <option value="female">Female</option>
                     <option value="other">Other</option>
@@ -97,12 +97,14 @@
             <label for="comments" title="Enter your comments" class="comment-label">Comments:</label>
             <textarea id="comments" name="comments" placeholder="Write your comments here..." cols="30" rows="5"
                 disabled></textarea>
-
-            <button type="submit" formmethod="post" formenctype="multipart/form-data" formtarget="_blank"
-                formnovalidate>Submit</button><keygen style="color: red;" dir="rtl" keytype="rsa"
-                challenge="random_challenge" lang="en"></keygen>
-
-
+            <label title="Select your preferred color">Preferred Color:</label>
+            <input type="radio" id="color-red" name="color" value="red">
+            <label for="color-red">Red</label>
+            <input type="radio" id="color-blue" name="color" value="blue">
+            <label for="color-blue">Blue</label>
+            <input type="radio" id="color-green" name="color" value="green">
+            <label for="color-green">Green</label>
+            <button type="submit" formnovalidate>Submit</button>
         </fieldset>
     </form>
 </body>
